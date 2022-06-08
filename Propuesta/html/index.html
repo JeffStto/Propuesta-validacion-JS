@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lobster+Two&family=Macondo+Swash+Caps&family=Pacifico&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+     <link rel="stylesheet" href="../css/index.css">
+     <title>Propuesta- validacion_form</title>
+</head>
+<body>
+  <div class="div_form">
+
+    <form action="#" class="form" id="form" autocomplete="off">
+
+      <div class="h1_form">
+        <h1>
+          <img src="../Images/logo_doc.png" alt="logo_C-naLink" class="logo">
+          <p style="color:aquamarine"><b>(Current Access Network)</b></p>
+        </h1>
+      </div>
+
+     <div class="input_form divClase_nombre_usuario" id="div_nombre">
+        <label for="nombre_usuario" class="clase_label">Nombre(s):</label>
+        <input type="text" id="input_nombre_usuario" name="nombre_usuario" class="clase_input" placeholder="Nombre(s) Completo(s)" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Minimo 3 letras, sin simbolos o numeros*</p>
+     </div>
+
+     <div class="input_form divClase_apellido_usuario" id="div_apellido">
+        <label for="apellido_usuario" class="clase_label">Apellido(s):</label>
+        <input type="text" id="input_apellido_usuario" name="apellido_usuario" class="clase_input" placeholder="Apellido(s) Completo(s)" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Minimo 3 letras, sin simbolos o numeros*</p>
+     </div>
+
+      <div class="input_form divClase_tipoDocumento_usuario" id="div_tipoDocumento">
+        <label for="tipoDocumento_usuario" class="clase_label">Tipo documento:</label>
+        <input type="text" id="input_tipo_documento_usuario" name="tipoDocumento_usuario" class="clase_input" placeholder="Haga click y elija una opcion" list="TiposDocumento">
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <datalist id="TiposDocumento">
+          <option value="CC (Cedula de ciudadania)"></option>
+          <option value="CE (Cedula extranjeria)"></option>
+        </datalist>
+        <p class="mensajeError">No dijite*</p>
+      </div>
+
+     <div class="input_form divClase_documento_usuario" id="div_documento">
+        <label for="documento_usuario" class="clase_label">Documento:</label>
+        <input type="text" id="input_documento_usuario" name="documento_usuario" class="clase_input" placeholder="Numero de documento" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Numeros sin simbolos, espacios o letras*</p>
+     </div>
+
+     <div class="input_form divClase_telefono_usuario" id="div_telefono">
+        <label for="telefono_usuario" class="clase_label">Telefono:</label>
+        <input type="text" id="input_telefono_usuario" name="telefono_usuario" class="clase_input" placeholder="Numero de contacto" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Minimo 7 numeros y maximo 14 sin espacios*</p>
+     </div>
+
+
+     <div class="input_form divClase_email_usuario" id="div_email">
+        <label for="email_usuario" class="clase_label">Email:</label>
+        <input type="email" id="input_email_usuario" name="email_usuario" class="clase_input" placeholder="Correo electronico" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Email no valido*</p>
+     </div>
+
+     <div class="input_form divClase_contraseña_usuario" id="div_contraseña">
+        <label for="contraseña_usuario" class="clase_label">Contraseña:</label>
+        <input type="password" id="input_contraseña_usuario" name="contraseña_usuario" class="clase_input" placeholder="Clave de usuario" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Minimo 8 caracteres y  maximo 30 entre letras, simbolos y numeros*</p>
+     </div>
+
+     <div class="input_form divClase_contraseña2_usuario" id="div_contraseña2">
+        <label for="contraseña2_usuario" class="clase_label">Confirmar contraseña:</label>
+        <input type="password" id="input_contraseña2_usuario" name="contraseña2_usuario" class="clase_input" placeholder="Repetir clave de usuario" required>
+        <i class="fas fa-times-circle input_icon form_validacion_estado"></i>
+        <p class="mensajeError">Las contraseñas no coinciden*</p>
+     </div>
+
+      <div class="terminosCondiciones_form terminosCondiciones">
+        <input type="checkbox" id="terminosCondiciones">
+        <label for="terminosCondiciones">He leído y acepto los </label>
+        <a href="#">Términos y Condiciones</a>
+        <p class="mensajeError terminos"></p>
+      </div>
+
+      <div class="boton_form2">
+        <input type="reset" value="Borrar Contacto">
+      </div>
+
+      <div class="boton_form">
+        <input type="submit" value="Enviar Contacto">
+      </div>
+      <p class="mensajeCorrecto" id="mensajeCorrecto"></p>
+
+    </form>
+  <script type="text/javascript" src="../js/index.js"></script>
+  </div>
+</body>
+</html>

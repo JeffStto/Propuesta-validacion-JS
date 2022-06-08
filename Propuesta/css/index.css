@@ -1,0 +1,239 @@
+body{
+     padding: 0;
+     margin: 0;
+     line-height: 1.6;
+     background-size: cover;
+}
+
+.logo{
+     width: 100%;
+     background-color: black;
+     padding: 5px;
+     margin: 10px -20px;
+     border-radius: 10px;
+     border: solid;
+     border-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+     font-family: 'comicsans', sans-serif;
+    }
+
+body{
+    background: url(../images/Sena.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+.div_form {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+:root {
+  --cfondoForm1: rgb(0, 0, 0);
+  --cfondoForm2: rgb(9, 61, 68);
+  --cblanco: white;
+  --ctexto: white;
+  --cverde:  rgb(119, 255, 73);
+  --cEnviarOrange: rgb(218, 72, 5);
+  --cAmarillo: yellow;
+  --error: rgb(184, 31, 31);
+  --cnegro: black;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + label::before {
+  background-color: black;
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+[type="checkbox"]:checked + label {
+  color: var(--cAmarillo);
+}
+
+.form {
+  border-top: 3px solid var(--cblanco);
+  max-width: 400px;
+  padding: 30px 50px;
+  margin: auto;
+  margin-top: 10px;
+  background: linear-gradient(
+    200deg,
+    var(--cfondoForm1) 0%,
+    var(--cfondoForm2) 50%
+  );
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+.h1_form {
+  width: 324px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: -12px;
+}
+
+.input_form {
+  margin-bottom: 30px;
+}
+
+.input_form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--ctexto);
+}
+
+.input_form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: black;
+  border-bottom: 0.5px solid var(--ctexto);
+  color: white;
+}
+
+.input_form #horario{
+  background-color: white;
+  color: black;
+  border-bottom: solid;
+}
+
+
+.input_form input:focus + label{
+  font-weight: bold;
+  color: var(--cverde);
+}
+
+input:focus {
+  color:darkorange;
+}
+
+
+.terminosCondiciones_form {
+  margin-left: 15px;
+  position: relative;
+  color: var(--ctexto);
+  font-size: 13px;
+}
+
+.terminosCondiciones_form label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--cblanco);
+  position: absolute;
+  left: -18px;
+}
+
+.boton_form input {
+  background: var(--cnegro);
+  color: var(--cblanco);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  border: none;
+}
+
+.boton_form2 input {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  border: none;
+}
+
+.boton_form input:hover {
+  background: var(--cEnviarOrange);
+  transition: 0.5s;
+}
+
+.terminosCondiciones_form a{
+  color: cyan;
+}
+
+.mensajeError {
+  color: var(--error);
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.mensajeCorrecto {
+  text-align: center;
+  font-weight: bold;
+  color: darkturquoise;
+}
+
+.grupo_correcto .form_validacion_estado{
+  color: greenyellow;
+  opacity: 1;
+}
+
+.grupo_incorrecto .clase_input{
+  border: 2px solid red;
+}
+
+
+.grupo_incorrecto .form_validacion_estado{
+  color: red;
+  opacity: 1;
+}
+
+.input_form{
+  position: relative;
+	width: 300px;
+}
+
+.input_icon {
+	color: white;
+	position: inherit;
+	width: 20px;
+	height: 20px;
+	left: 280px;
+	top: 50%;
+	transform: translateY(-98%);
+  display: none;
+}
+
+.input_icon_init {
+  display: block;
+}
+
+
+
+.mensajeError{
+  color: red;
+  font-size: 15px;
+  display: none;
+}
+
+.mensajeError_activo{
+  display: block;
+}
+
+/* .mensaje_form{
+  color: red;
+  display: none;
+}
+
+.mensaje_aletra_activo{
+  display: block;
+} */
